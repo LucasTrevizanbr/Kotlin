@@ -1,9 +1,11 @@
+package modelo
+
 import java.math.BigDecimal
 
 class ContaCorrente(
-    nome: String,
+    titular: Cliente,
     numeroConta : String
-) :Conta(nome = nome, numeroConta = numeroConta){
+) : Conta(titular = titular, numeroConta = numeroConta){
 
     override fun saca(valor : BigDecimal){
         val valorComTaxa = valor.plus(BigDecimal(0.1))

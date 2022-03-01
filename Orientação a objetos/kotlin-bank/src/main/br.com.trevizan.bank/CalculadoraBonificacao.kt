@@ -1,3 +1,4 @@
+import modelo.Funcionario
 import java.math.BigDecimal
 
 class CalculadoraBonificacao {

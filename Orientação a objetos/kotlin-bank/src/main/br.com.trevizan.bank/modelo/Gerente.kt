@@ -1,3 +1,6 @@
+package modelo
+
+import modelo.FuncionarioAdmin
 import java.math.BigDecimal
 import java.math.RoundingMode
 
@@ -6,7 +9,7 @@ class Gerente(
     cpf : String,
     salario : BigDecimal,
     senha : String
- ):FuncionarioAdmin (nome = nome, cpf = cpf, salario = salario, senha = senha){
+ ): FuncionarioAdmin(nome = nome, cpf = cpf, salario = salario, senha = senha){
 
     override val bonificacao: BigDecimal
         get() {
